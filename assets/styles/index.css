@@ -55,7 +55,7 @@ header .Header-container button:hover {
 nav {
   margin: 0 auto;
   height: 7vh;
-  width: 80%;
+  width: 70%;
   background: rgba(235, 235, 235, 0.5);
   display: flex;
   justify-content: space-between;
@@ -128,6 +128,140 @@ nav .nav-right ul li:hover i {
   color: black;
 }
 
-.Latest-info img {
-  width: 150px;
+.Latest-info {
+  height: 125vh;
+  margin: 0 auto;
+  width: 70%;
+  background: white;
+  position: relative;
+}
+.Latest-info .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+}
+.Latest-info .date span {
+  font-family: font-2, sans-serif;
+}
+.Latest-info .date span:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 25%;
+  transform: translateX(-150px);
+  border: 1px solid rgb(235, 235, 235);
+  width: 300px;
+}
+.Latest-info .date span:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 75%;
+  transform: translateX(-150px);
+  border: 1px solid rgb(235, 235, 235);
+  width: 300px;
+}
+.Latest-info .Latest-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Latest-info .Latest-info-container h1 {
+  font-family: font-1, sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0;
+  width: 50%;
+}
+.Latest-info .Latest-info-container p {
+  width: 50%;
+  font-family: font-2, sans-serif;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 30px 0px;
+}
+.Latest-info .Latest-info-container img {
+  width: 80%;
+}
+.Latest-info .Latest-info-container a {
+  font-family: font-1, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  margin: 40px 0px;
+  transition: all 0.5s;
+}
+.Latest-info .Latest-info-container a:hover {
+  padding: 15px 35px;
+}
+
+.Other-infos {
+  height: 70vh;
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+}
+.Other-infos .Other-infos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.Other-infos .Other-infos-container .info {
+  height: 80%;
+  width: 50%;
+}
+.Other-infos .Other-infos-container .info .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: font-2, sans-serif;
+  font-size: 0.8rem;
+}
+.Other-infos .Other-infos-container .info .info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Other-infos .Other-infos-container .info .info-container h2 {
+  font-family: font-1, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  width: 50%;
+  text-align: center;
+}
+.Other-infos .Other-infos-container .info .info-container img {
+  width: 70%;
+}
+.Other-infos .Other-infos-container .info .info-container p {
+  width: 70%;
+  font-family: font-2, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 30px 0px;
+}
+.Other-infos .Other-infos-container .info .info-container a {
+  font-family: font-1, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.Other-infos .Other-infos-container .info .info-container a:hover {
+  padding: 15px 35px;
 }/*# sourceMappingURL=index.css.map */

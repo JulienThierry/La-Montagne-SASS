@@ -66,7 +66,7 @@ header{
 nav{
     margin: 0 auto;
     height: 7vh;
-    width: 80%;
+    width: 70%;
     background: rgba(235, 235, 235, 0.5);
     display: flex;
     justify-content: space-between;
@@ -142,7 +142,141 @@ nav{
 }
 
 .Latest-info{
-    img{
-        width: 150px;
+    height: 125vh;
+    margin: 0 auto;
+    width: 70%;
+    background: $color1;
+    position: relative;
+    .date{
+        @include center;
+        padding: 60px 0px;
+        span{
+            font-family: $font2;
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 60px;
+                left: 25%;
+                transform: translateX(-150px);
+                border: 1px solid  rgba(235, 235, 235);
+                width: 300px;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                top: 60px;
+                left: 75%;
+                transform: translateX(-150px);
+                border: 1px solid  rgba(235, 235, 235);
+                width: 300px;
+            }
+        }
+    }
+    .Latest-info-container{
+        @include center;
+        flex-direction: column;
+        h1{
+            font-family: $font1;
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+            margin: 0;
+            width: 50%;
+        }
+      p{
+        width: 50%;
+        font-family: $font2;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        text-align: center;
+        padding: 30px 0px;
+      }
+      img{
+        width: 80%;
+    }
+    a{
+        font-family: $font1;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: $color2;
+        border: 2px solid $color2;
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        margin: 40px 0px;
+        transition: all 0.5s;
+
+        &:hover{
+            padding: 15px 35px;
+        }
+    }
+    }
+    
+}
+
+.Other-infos{
+    height: 70vh;
+    background: $color1;
+    width: 70%;
+    margin: 0 auto;
+
+    .Other-infos-container{
+        @include center;
+        height: 100%;
+
+        .info{
+            height: 80%;
+            width: 50%;
+            .date{
+                @include center;
+                font-family: $font2;
+                font-size: 0.8rem
+            }
+            .info-container{
+
+                @include center;
+                flex-direction: column;
+
+                h2{
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    font-size: 1.3rem;
+                    letter-spacing: 2px;
+                    width: 50%;
+                    text-align: center;
+                }
+                img{
+                    width: 70%;
+                    
+                }
+                p{
+                    width: 70%;
+                    font-family: $font2;
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                    margin: 30px 0px;
+                }
+                a{
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    padding: 10px 30px;
+                    text-decoration: none;
+                    color: $color2;
+                    border: 2px solid $color2;
+                    font-size: 0.6rem;
+                    letter-spacing: 2px;
+                   
+                    transition: all 0.5s;
+            
+                    &:hover{
+                        padding: 15px 35px;
+                    }
+                }
+            }
+            
+        }
+       
     }
 }
