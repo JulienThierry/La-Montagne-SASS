@@ -8,10 +8,11 @@
 }
 body {
   background: url(../images/bg.jpg) center/cover fixed;
+  margin: 0;
 }
 
 header {
-  height: 90vh;
+  height: 93vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,4 +50,84 @@ header .Header-container button {
 header .Header-container button:hover {
   background: white;
   color: black;
+}
+
+nav {
+  margin: 0 auto;
+  height: 7vh;
+  width: 80%;
+  background: rgba(235, 235, 235, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+nav .nav-left ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+}
+nav .nav-left ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  transition: all 0.5s;
+}
+nav .nav-left ul li:hover {
+  background: rgb(235, 235, 235) !important;
+}
+nav .nav-left ul li:hover span {
+  color: black;
+}
+nav .nav-left ul li span {
+  font-family: font-1, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: white;
+}
+nav .nav-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
+}
+nav .nav-right ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+}
+nav .nav-right ul li {
+  font-size: 1.3rem;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  transition: all 0.5s;
+}
+nav .nav-right ul li:hover {
+  background: rgb(235, 235, 235) !important;
+}
+nav .nav-right ul li:hover i {
+  color: black;
+}
+
+.Latest-info img {
+  width: 150px;
 }/*# sourceMappingURL=index.css.map */

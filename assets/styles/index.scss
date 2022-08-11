@@ -13,13 +13,16 @@
 }
 $font1: font-1, sans-serif;
 $font2: font-2, sans-serif;
+$color1: white;
+$color2: black;
+
 body{
     background: url(../images/bg.jpg) center/cover fixed;
-
+    margin: 0;
     
 }
 header{
-    height: 90vh;
+    height: 93vh;
     @include center;
 
 
@@ -27,7 +30,7 @@ header{
         @include center;
         flex-direction: column;
         height: 100%;
-        color: white;
+        color: $color1;
 
         h1{
             font-size: 5rem;
@@ -44,8 +47,8 @@ header{
         button{
             background: none;
             font-size: 1.2rem;
-            color: white;
-            border: 2px solid white;
+            color: $color1;
+            border: 2px solid $color1;
             padding: 20px 23px;
             border-radius: 50px;
             margin-top: 50px;
@@ -53,9 +56,93 @@ header{
         }
         button:hover{
       
-            background: white;
-            color: black;
+            background: $color1;
+            color: $color2;
 
         }
+    }
+
+}
+nav{
+    margin: 0 auto;
+    height: 7vh;
+    width: 80%;
+    background: rgba(235, 235, 235, 0.5);
+    display: flex;
+    justify-content: space-between;
+
+    .nav-left{
+        height: 100%;
+        width: 50%;
+        @include center;
+        justify-content: start;
+        ul{
+            height: 100%;
+            display: flex;
+        align-items: center;
+    
+        list-style: none;
+        padding: 0;
+        width: 90%;
+
+        li{
+            height: 100%;
+            @include center;
+            padding: 0px 20px;
+            transition: all 0.5s;
+
+            &:hover{
+                background: rgba(235, 235, 235)!important;
+                 span{
+                    color: $color2;
+                 }
+            }
+            span{
+                font-family: $font1;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: $color1;
+
+            
+            }
+        }
+        }
+
+    }
+    .nav-right{
+        height: 100%;
+        width: 50%;
+        @include center;
+        justify-content: end;
+
+        ul{
+            display: flex;
+
+        list-style: none;
+        padding: 0;
+        height: 100%;
+
+        li{
+            font-size: 1.3rem;
+            color: $color1;
+            height: 100%;
+            @include center;
+            width: 80px;
+            transition: all 0.5s;
+            &:hover{
+                background: rgba(235, 235, 235)!important;
+                 i{
+                    color: $color2;
+                 }
+            }
+        }
+    }
+    }
+}
+
+.Latest-info{
+    img{
+        width: 150px;
     }
 }
