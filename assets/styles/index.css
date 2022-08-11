@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "font-1";
+  src: url("../fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "font-2";
+  src: url("../fonts/Merriweather-Light.ttf");
+}
+body {
+  background: url(../images/bg.jpg) center/cover fixed;
+}
+
+header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .Header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+}
+header .Header-container h1 {
+  font-size: 5rem;
+  font-family: font-1, sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 55%;
+  margin-bottom: 20px;
+}
+header .Header-container p {
+  font-family: font-2, sans-serif;
+}
+header .Header-container button {
+  background: none;
+  font-size: 1.2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 20px 23px;
+  border-radius: 50px;
+  margin-top: 50px;
+  transition: all 0.5s;
+}
+header .Header-container button:hover {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=index.css.map */
