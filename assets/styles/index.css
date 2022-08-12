@@ -264,4 +264,11 @@ nav .nav-right ul li:hover i {
 }
 .Other-infos .Other-infos-container .info .info-container a:hover {
   padding: 15px 35px;
+}
+
+footer {
+  height: 60vh;
+  background: white;
+  width: 70%;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
