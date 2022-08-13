@@ -343,21 +343,47 @@ footer{
             flex-direction: column;
             height: 100%;
             width: 50%;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
+            border-left: 1px solid gray;
             div{
                 height: 25%;
                 display: flex;
                 align-items: center;
+                
+                border-bottom: 1px solid gray;
 
+                &:last-child{
+                    border: none;
+                }
                 span{
                     text-transform: uppercase;
                     font-family: $font1;
-                    
-                    margin: 0px 50px;
+                    width: 20%;
+                    text-align: center;
                 }
                 p{
                     width: 40%;
                     font-family: $font2;
+                    margin: 0 auto;
+                }
+                div{
+                    margin: 0 auto;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    button{
+                        background: none;
+                        border-radius: 50px;
+                        height: 50px;
+                        width: 50px;
+                        padding: 15px;
+                        border: 1px solid gray;
+                        
+                        i{
+                            text-align: center;
+                        }
+                }
+                
                 }
             }
         }
