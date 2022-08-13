@@ -286,4 +286,80 @@ footer{
     background: $color1;
     width: 70%;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .footer-container{
+        height: 100%;
+        display: flex;
+
+        .footer-left{
+            width: 50%;
+
+            form{
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                justify-content: space-around;
+                font-family: $font1;
+                color: $color2;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.7rem;
+
+                input[type=text]{
+                    width: 100%;
+                    padding: 10px 0px;
+                }
+
+                input[type=textarea]{
+                    width: 100%;
+                    padding: 80px 0px;
+                }
+
+                input[type=submit]{
+                    margin-top: 20px;
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    background: none;
+                    color: $color2;
+                    border: 2px solid $color2;
+                    font-size: 0.7rem;
+                    letter-spacing: 2px;
+                    width: fit-content;
+                    transition: all 0.5s;
+                
+                        &:hover{
+                            padding: 15px 35px;
+                        }
+                }
+
+            }
+        }
+        .footer-right{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+            font-size: 0.7rem;
+            div{
+                height: 25%;
+                display: flex;
+                align-items: center;
+
+                span{
+                    text-transform: uppercase;
+                    font-family: $font1;
+                    
+                    margin: 0px 50px;
+                }
+                p{
+                    width: 40%;
+                    font-family: $font2;
+                }
+            }
+        }
+    }
 }
